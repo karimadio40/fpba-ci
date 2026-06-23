@@ -1,0 +1,370 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "services": "Services",
+    "membership": "Membership",
+    "contact": "Contact",
+    "admin": "Admin",
+    "cta": "Become a member"
+  },
+  "hero": {
+    "badge": "FPBA-CI — Federation of Reinforced Concrete Pole Producers of Côte d'Ivoire",
+    "title": "Building the future of",
+    "titleHighlight": "reinforced concrete",
+    "titleEnd": "pole industry",
+    "subtitle": "FPBA-CI brings together Ivorian manufacturers of reinforced concrete poles. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta_primary": "Discover our products",
+    "cta_secondary": "Join the federation",
+    "stats": {
+      "members": "Member companies",
+      "years": "Years of existence",
+      "products": "Product families"
+    }
+  },
+  "about": {
+    "label": "Who we are",
+    "title": "A federation serving the",
+    "titleHighlight": "concrete pole industry",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. FPBA-CI gathers the industry around a shared vision: structuring, standardising and promoting the manufacture of reinforced concrete poles in Côte d'Ivoire.",
+    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We support our members in standards compliance, access to public markets, technical training and advocacy.",
+    "vision_title": "Our vision",
+    "vision_text": "Make the Ivorian reinforced concrete pole a sub-regional reference through innovation, quality and producer solidarity.",
+    "mission_title": "Our mission",
+    "mission_text": "Represent, support and defend reinforced concrete pole manufacturers across the national territory.",
+    "values": {
+      "title": "Our values",
+      "integrity": {
+        "title": "Integrity",
+        "desc": "We act with transparency and ethics in every professional relationship."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "We promote the highest standards of quality and industrial safety."
+      },
+      "proximity": {
+        "title": "Solidarity",
+        "desc": "We bring industry players together for a strong and united sector."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "We encourage modern and sustainable manufacturing processes."
+      }
+    },
+    "contact_name": "GOUE NOEL",
+    "contact_role": "FPBA-CI — Main contact"
+  },
+  "products": {
+    "label": "Our products",
+    "title": "A full range of",
+    "titleHighlight": "reinforced concrete poles",
+    "subtitle": "Discover the pole families produced by FPBA-CI member companies. Every product meets standards in force in Côte d'Ivoire and the ECOWAS area.",
+    "learnMore": "View details",
+    "items": {
+      "electric": {
+        "title": "Electric poles",
+        "desc": "Poles for low and medium-voltage distribution networks, compliant with CIE specifications.",
+        "specs": ["Heights: 9 m / 10 m / 12 m / 14 m", "Classes: C, D, E, F", "High-density vibrated reinforced concrete", "NI-CIE standard compliant"]
+      },
+      "telecom": {
+        "title": "Telecom poles",
+        "desc": "Supports for telecom and fibre-optic networks, designed for national operators.",
+        "specs": ["Heights: 7 m / 8 m / 9 m", "Suitable for fibre / copper", "Anti-corrosion treatment", "Operator marking available"]
+      },
+      "lighting": {
+        "title": "Street-lighting poles",
+        "desc": "Poles for urban, peri-urban and road lighting — elegant and durable.",
+        "specs": ["Heights: 6 m / 8 m / 10 m", "Single or double arms", "Compatible with LED fixtures", "Customisable finishes"]
+      },
+      "fence": {
+        "title": "Fence poles",
+        "desc": "Secure fencing solutions for industrial, agricultural and residential sites.",
+        "specs": ["Heights: 2 m / 2.5 m / 3 m", "Square or H profiles", "High mechanical resistance", "Quick and cost-effective installation"]
+      },
+      "custom": {
+        "title": "Custom poles",
+        "desc": "Engineering and production of special poles based on customer specifications.",
+        "specs": ["Dedicated engineering studies", "Prototypes and testing", "Small and large series", "ISO quality follow-up"]
+      },
+      "accessories": {
+        "title": "Accessories & hardware",
+        "desc": "Complementary parts needed for pole installation and operation.",
+        "specs": ["Consoles, cross-arms, brackets", "Prefab foundation blocks", "Galvanised hardware", "Continuous stock"]
+      }
+    },
+    "request_quote": "Request a quote"
+  },
+  "services": {
+    "label": "Our services",
+    "title": "What we offer our",
+    "titleHighlight": "members",
+    "subtitle": "FPBA-CI provides its members with a set of services designed to structure their activity and strengthen the industry.",
+    "learnMore": "Learn more",
+    "items": {
+      "representation": {
+        "title": "Representation",
+        "desc": "Representing the sector before public authorities and customers.",
+        "fullDesc": "FPBA-CI gives manufacturers a voice with the Ministry, CIE, local authorities and donors. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "features": [
+          "Advocacy with ministries and institutions",
+          "Public tender monitoring",
+          "Interface with CIE and telecom operators",
+          "Participation in standardisation bodies",
+          "International representation",
+          "Institutional communication"
+        ],
+        "why": "A single, structured voice carries much further than isolated initiatives."
+      },
+      "accompaniment": {
+        "title": "Support",
+        "desc": "Technical, legal and financial support for member companies.",
+        "fullDesc": "Our experts assist members in structuring their production facilities, accessing financing and ensuring compliance. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "features": [
+          "Industrial plant diagnostic",
+          "Standards compliance",
+          "Financing dossier support",
+          "Sector-specific legal and tax advice",
+          "Quality and safety audits",
+          "Personalised improvement plan"
+        ],
+        "why": "Structured support secures growth and professionalises practices."
+      },
+      "training": {
+        "title": "Training",
+        "desc": "Continuous training programmes for operators, technicians and managers.",
+        "fullDesc": "We design and deliver training modules tailored to the concrete pole trades: reinforcement, vibration, demoulding, quality control, safety.",
+        "features": [
+          "Reinforcement and casting training",
+          "Concrete mixes and formulations",
+          "Quality control and lab testing",
+          "Health, Safety and Environment (HSE)",
+          "Workshop team management",
+          "Manager modules: strategy & finance"
+        ],
+        "why": "Upskilling teams is the primary lever of product quality."
+      },
+      "standardization": {
+        "title": "Standardisation",
+        "desc": "Definition, update and promotion of technical standards for the industry.",
+        "fullDesc": "We run the technical commissions that draft and revise Ivorian reinforced concrete pole standards together with CODINORM and end users.",
+        "features": [
+          "Permanent technical commissions",
+          "CIE / telecom specification updates",
+          "Testing and control references",
+          "Regional standards watch (ECOWAS)",
+          "Best-practice guide",
+          "'FPBA-CI Product' certification"
+        ],
+        "why": "A shared standard guarantees quality, protects consumers and structures the market."
+      },
+      "information": {
+        "title": "Information & Watch",
+        "desc": "Sector, market, regulatory and tender intelligence.",
+        "fullDesc": "Members receive a regular newsletter, access to a document platform and real-time tender alerts.",
+        "features": [
+          "Monthly FPBA-CI newsletter",
+          "Tender alerts",
+          "Standards and studies library",
+          "Market statistics",
+          "Member directory",
+          "Secure private area"
+        ],
+        "why": "The right information at the right time makes the difference in competitive markets."
+      },
+      "networking": {
+        "title": "Networking",
+        "desc": "Events, B2B meetings and trade missions to grow your business.",
+        "fullDesc": "Trade shows, technical days, meetings with customers and international missions: many opportunities to grow your network.",
+        "features": [
+          "Annual General Assembly",
+          "Thematic technical days",
+          "B2B meetings with customers",
+          "Regional economic missions",
+          "Construction and energy trade show",
+          "Matchmaking platform"
+        ],
+        "why": "A structured network accelerates business opportunities and best-practice sharing."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What our",
+    "titleHighlight": "members say",
+    "subtitle": "Our members share their experience inside the federation.",
+    "items": [
+      {
+        "name": "Kofi Mensah",
+        "role": "Director, Société Poteaux du Nord",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. FPBA-CI's support helped us obtain CIE homologation in record time.",
+        "rating": 5
+      },
+      {
+        "name": "Aminata Diallo",
+        "role": "Manager, Béton Industries SARL",
+        "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse. Thanks to FPBA-CI training, our scrap rate dropped by half in one year.",
+        "rating": 5
+      },
+      {
+        "name": "Jean-Baptiste Koffi",
+        "role": "CEO, Poteaux & Préfa CI",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The federation gives us a real voice with authorities and customers.",
+        "rating": 5
+      },
+      {
+        "name": "Fatou Traoré",
+        "role": "QHSE Manager, IvoirBéton",
+        "text": "Excepteur sint occaecat cupidatat non proident. Technical commissions are a precious space for exchange between professionals.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk about your",
+    "titleHighlight": "project",
+    "subtitle": "Fill out the form and the FPBA-CI secretariat will get back to you as soon as possible.",
+    "form": {
+      "name": "Full name",
+      "name_placeholder": "Your first and last name",
+      "company": "Company",
+      "company_placeholder": "Your company name",
+      "email": "Email address",
+      "email_placeholder": "your@email.com",
+      "phone": "Phone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "subject": "Subject",
+      "subject_placeholder": "Select a subject",
+      "message": "Your message",
+      "message_placeholder": "Describe your need...",
+      "submit": "Send request",
+      "submitting": "Sending...",
+      "success": "Request saved successfully. We will contact you very soon.",
+      "subjects": [
+        "Information request",
+        "Membership request",
+        "Support request",
+        "Product quotation request",
+        "Partnership",
+        "Press / Media",
+        "Other"
+      ]
+    },
+    "info": {
+      "address_label": "Address",
+      "address": "Cocody Angré, Abidjan, Côte d'Ivoire",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "hours_label": "Hours",
+      "hours": "Mon – Fri: 08:00 AM – 5:30 PM"
+    }
+  },
+  "membership": {
+    "label": "Membership",
+    "title": "Join the",
+    "titleHighlight": "FPBA-CI",
+    "subtitle": "Any reinforced concrete pole manufacturer established in Côte d'Ivoire may join the federation. Complete the form below.",
+    "benefits_title": "Why join?",
+    "benefits": [
+      "Collective voice with public authorities and customers",
+      "Priority access to public tenders",
+      "Training and technical workshops at preferential rates",
+      "Regulatory, standards and sector intelligence",
+      "Individual compliance support",
+      "Networking and B2B opportunities"
+    ],
+    "form": {
+      "company": "Company name",
+      "company_placeholder": "Your company name",
+      "rccm": "RCCM No.",
+      "rccm_placeholder": "CI-ABJ-...",
+      "manager": "Manager's name",
+      "manager_placeholder": "First and last name",
+      "role": "Position",
+      "role_placeholder": "E.g. CEO",
+      "email": "Business email",
+      "email_placeholder": "contact@company.ci",
+      "phone": "Phone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "address": "Address / HQ",
+      "address_placeholder": "City, district, street",
+      "products": "Main products manufactured",
+      "products_placeholder": "E.g. electric, telecom, lighting poles…",
+      "staff": "Headcount",
+      "staff_placeholder": "Select a bracket",
+      "staff_options": ["1 – 9 employees", "10 – 49 employees", "50 – 199 employees", "200+ employees"],
+      "motivation": "Motivation to join FPBA-CI",
+      "motivation_placeholder": "Present your company and expectations…",
+      "consent": "I certify the accuracy of the information provided and accept the federation statutes.",
+      "submit": "Submit my membership application",
+      "success": "Your membership application has been received. Our secretariat will get back to you."
+    }
+  },
+  "accompaniment": {
+    "label": "Support",
+    "title": "Request",
+    "titleHighlight": "support",
+    "subtitle": "Member or not, you can call on FPBA-CI expertise to structure your activity.",
+    "form": {
+      "type": "Type of support",
+      "type_placeholder": "Select a type",
+      "types": [
+        "Industrial diagnostic",
+        "Standards compliance",
+        "Access to financing",
+        "Legal / tax advice",
+        "Quality & safety audit",
+        "Custom training",
+        "Other"
+      ],
+      "company": "Company",
+      "company_placeholder": "Your company name",
+      "contact": "Contact person",
+      "contact_placeholder": "First and last name",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "phone": "Phone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "need": "Need description",
+      "need_placeholder": "Describe your request precisely…",
+      "deadline": "Desired deadline",
+      "deadline_placeholder": "E.g. within 3 months",
+      "submit": "Submit my request",
+      "success": "Your support request has been received. We will reply quickly."
+    }
+  },
+  "admin": {
+    "title": "Admin Area",
+    "subtitle": "Sign in to manage requests and site content.",
+    "login": {
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "hint": "Demo: admin@fpba-ci.org / admin"
+    },
+    "tabs": {
+      "membership": "Memberships",
+      "accompaniment": "Support requests",
+      "contact": "Contact requests",
+      "content": "Content"
+    },
+    "empty": "No requests yet.",
+    "logout": "Sign out",
+    "delete": "Delete",
+    "status": {
+      "new": "New",
+      "in_review": "In progress",
+      "done": "Done"
+    }
+  },
+  "footer": {
+    "tagline": "Federation of Reinforced Concrete Pole Producers of Côte d'Ivoire",
+    "description": "FPBA-CI unites Ivorian reinforced concrete pole manufacturers to structure the industry and defend its interests.",
+    "links_title": "Quick links",
+    "products_title": "Products",
+    "contact_title": "Contact",
+    "copyright": "© 2026 FPBA-CI. All rights reserved.",
+    "made_with": "Côte d'Ivoire"
+  }
+}

@@ -1,0 +1,237 @@
+﻿/* ---- About Section ---- */
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(242, 106, 31,0.06) 0%, transparent 70%);
+  top: -100px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Header */
+.about__header {
+  margin-bottom: 64px;
+}
+
+/* Grid layout */
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Visual column */
+.about__visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Image placeholder */
+.about__image-placeholder {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(242, 106, 31, 0.25);
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__image-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.85;
+}
+
+.about__pole-illu {
+  width: 180px;
+  height: 180px;
+  animation: poleSway 6s ease-in-out infinite;
+}
+
+@keyframes poleSway {
+  0%, 100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+}
+
+.about__image-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* Experience badge */
+.about__badge {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #F26A1F, #C9521A);
+  border-radius: 16px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(242, 106, 31, 0.4);
+}
+
+.about__badge-num {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  line-height: 1;
+}
+
+.about__badge-text {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* Contact card */
+.about__contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  margin-top: 16px;
+}
+
+.about__contact-avatar {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #F26A1F, #C9521A);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.about__contact-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 2px;
+}
+
+.about__contact-role {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.about__contact-email {
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.about__contact-email:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Content column */
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about__text {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about__values-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 16px 0 20px;
+}
+
+/* Values grid */
+.about__values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about__value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  cursor: default;
+}
+
+.about__value-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: var(--color-primary-subtle);
+  border: 1px solid rgba(242, 106, 31, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.about__value-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.about__value-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.about__value-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image-placeholder {
+    aspect-ratio: 16/9;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__values {
+    grid-template-columns: 1fr;
+  }
+}

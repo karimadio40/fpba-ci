@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- SOGES Logo Mark — stylized M with colored bars -->
+  <!-- Orange bar (left outer, going up) -->
+  <rect x="24" y="28" width="10" height="46" rx="5" fill="#F97316" transform="rotate(-8 24 28)"/>
+  <!-- Teal bar (right outer, going up) -->
+  <rect x="86" y="26" width="10" height="46" rx="5" fill="#2DB8A0" transform="rotate(8 86 26)"/>
+  <!-- Red diagonal bar (center-left, going down) -->
+  <rect x="44" y="50" width="10" height="38" rx="5" fill="#E53E3E" transform="rotate(35 44 50)"/>
+  <!-- Green bar (center-right, going down) -->
+  <rect x="66" y="50" width="10" height="38" rx="5" fill="#38A169" transform="rotate(-35 66 50)"/>
+</svg>

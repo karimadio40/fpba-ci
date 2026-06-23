@@ -1,0 +1,224 @@
+/* ---- Services Section ---- */
+.services {
+  position: relative;
+  overflow: hidden;
+}
+
+.services__line {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.04;
+}
+
+.services__line--1 {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #F26A1F, transparent);
+  left: 25%;
+  top: 0;
+}
+
+.services__line--2 {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #F26A1F, transparent);
+  right: 25%;
+  top: 0;
+}
+
+/* Header */
+.services__header {
+  margin-bottom: 64px;
+  max-width: 680px;
+}
+
+/* Grid */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.services__card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.services__card:hover {
+  border-color: rgba(242, 106, 31, 0.45);
+  box-shadow: 0 20px 60px rgba(242, 106, 31, 0.18), 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* Image area */
+.services__card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.services__card-img-wrap--icon {
+  background: linear-gradient(135deg, var(--color-primary-subtle), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.services__card-icon-big {
+  width: 96px;
+  height: 96px;
+  color: var(--color-primary);
+  filter: drop-shadow(0 6px 12px rgba(242, 106, 31, 0.25));
+  transition: transform 0.4s ease;
+}
+
+.services__card-icon-big svg {
+  width: 100%;
+  height: 100%;
+}
+
+.services__card:hover .services__card-icon-big {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.services__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.services__card:hover .services__card-img {
+  transform: scale(1.08);
+}
+
+.services__card-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.15) 0%,
+    rgba(10, 20, 15, 0.55) 70%,
+    rgba(10, 20, 15, 0.85) 100%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.services__card:hover .services__card-img-overlay {
+  opacity: 0.85;
+}
+
+/* Card number badge */
+.services__card-number {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(242, 106, 31, 0.75);
+  border: 1px solid rgba(242, 106, 31, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  z-index: 2;
+}
+
+/* Card body */
+.services__card-body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/* Icon */
+.services__card-icon {
+  width: 46px;
+  height: 46px;
+  background: var(--color-primary-subtle);
+  border: 1px solid rgba(242, 106, 31, 0.22);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.services__card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.services__card:hover .services__card-icon {
+  background: rgba(242, 106, 31, 0.18);
+  border-color: rgba(242, 106, 31, 0.4);
+  box-shadow: 0 0 18px rgba(242, 106, 31, 0.25);
+}
+
+/* Title */
+.services__card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.3;
+}
+
+/* Description */
+.services__card-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.72;
+  flex: 1;
+}
+
+/* Learn more link */
+.services__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+}
+
+.services__card-link:hover {
+  gap: 12px;
+  color: var(--color-primary-light);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services__card-img-wrap {
+    height: 180px;
+  }
+}

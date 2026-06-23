@@ -1,0 +1,370 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "services": "Services",
+    "membership": "Adhésion",
+    "contact": "Contact",
+    "admin": "Espace gestionnaire",
+    "cta": "Devenir adhérent"
+  },
+  "hero": {
+    "badge": "FPBA-CI — Fédération des Producteurs de Poteaux Béton Armé de Côte d'Ivoire",
+    "title": "Bâtir l'avenir de la",
+    "titleHighlight": "filière poteau",
+    "titleEnd": "en béton armé",
+    "subtitle": "La FPBA-CI fédère les entreprises ivoiriennes de production de poteaux en béton armé. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta_primary": "Découvrir nos produits",
+    "cta_secondary": "Rejoindre la fédération",
+    "stats": {
+      "members": "Entreprises adhérentes",
+      "years": "Années d'existence",
+      "products": "Familles de produits"
+    }
+  },
+  "about": {
+    "label": "Qui sommes-nous",
+    "title": "Une fédération au service de la",
+    "titleHighlight": "filière béton armé",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. La FPBA-CI rassemble les industriels du secteur autour d'une vision commune : structurer, normaliser et promouvoir la fabrication du poteau en béton armé en Côte d'Ivoire.",
+    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Nous accompagnons nos adhérents dans le respect des normes, l'accès aux marchés publics, la formation technique et la défense des intérêts du secteur.",
+    "vision_title": "Notre vision",
+    "vision_text": "Faire du poteau en béton armé ivoirien une référence sous-régionale, par l'innovation, la qualité et la solidarité entre producteurs.",
+    "mission_title": "Notre mission",
+    "mission_text": "Représenter, accompagner et défendre les entreprises de production de poteaux en béton armé sur l'ensemble du territoire national.",
+    "values": {
+      "title": "Nos valeurs",
+      "integrity": {
+        "title": "Intégrité",
+        "desc": "Nous agissons avec transparence et éthique dans toutes nos relations professionnelles."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "Nous promouvons les standards les plus élevés de qualité et de sécurité industrielle."
+      },
+      "proximity": {
+        "title": "Solidarité",
+        "desc": "Nous rapprochons les acteurs du secteur pour une filière forte et concertée."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Nous encourageons l'adoption de procédés modernes et durables."
+      }
+    },
+    "contact_name": "GOUE NOEL",
+    "contact_role": "Personne à contacter — FPBA-CI"
+  },
+  "products": {
+    "label": "Nos produits",
+    "title": "Une gamme complète de",
+    "titleHighlight": "poteaux béton armé",
+    "subtitle": "Découvrez les familles de poteaux fabriqués par les entreprises adhérentes de la FPBA-CI. Chaque produit répond aux normes en vigueur en Côte d'Ivoire et dans l'espace CEDEAO.",
+    "learnMore": "Voir la fiche",
+    "items": {
+      "electric": {
+        "title": "Poteaux électriques",
+        "desc": "Poteaux pour réseaux de distribution basse et moyenne tension, conformes aux spécifications CIE.",
+        "specs": ["Hauteurs : 9 m / 10 m / 12 m / 14 m", "Classes : C, D, E, F", "Béton armé vibré haute densité", "Conformité norme NI-CIE"]
+      },
+      "telecom": {
+        "title": "Poteaux télécoms",
+        "desc": "Supports pour réseaux télécoms et fibre optique, dimensionnés pour les opérateurs nationaux.",
+        "specs": ["Hauteurs : 7 m / 8 m / 9 m", "Section adaptée fibre / cuivre", "Traitement anti-corrosion", "Marquage opérateur disponible"]
+      },
+      "lighting": {
+        "title": "Poteaux éclairage public",
+        "desc": "Poteaux dédiés à l'éclairage urbain, périurbain et routier — esthétiques et durables.",
+        "specs": ["Hauteurs : 6 m / 8 m / 10 m", "Crosses simples ou doubles", "Compatibles luminaires LED", "Finitions personnalisables"]
+      },
+      "fence": {
+        "title": "Poteaux clôture",
+        "desc": "Solutions de clôture sécurisée pour sites industriels, agricoles et résidentiels.",
+        "specs": ["Hauteurs : 2 m / 2,5 m / 3 m", "Profils carrés ou en H", "Résistance mécanique élevée", "Pose rapide et économique"]
+      },
+      "custom": {
+        "title": "Poteaux sur mesure",
+        "desc": "Études et fabrication de poteaux spéciaux selon les cahiers des charges des donneurs d'ordre.",
+        "specs": ["Études techniques dédiées", "Prototypes et essais", "Petites et grandes séries", "Suivi qualité ISO"]
+      },
+      "accessories": {
+        "title": "Accessoires & ferrures",
+        "desc": "Pièces complémentaires nécessaires à l'installation et l'exploitation des poteaux.",
+        "specs": ["Consoles, traverses, crosses", "Massifs de fondation préfabriqués", "Visserie et pièces galvanisées", "Stock permanent"]
+      }
+    },
+    "request_quote": "Demander un devis"
+  },
+  "services": {
+    "label": "Nos services",
+    "title": "Ce que nous offrons à nos",
+    "titleHighlight": "adhérents",
+    "subtitle": "La FPBA-CI met à disposition de ses adhérents un ensemble de services pensés pour structurer leur activité et renforcer la filière.",
+    "learnMore": "En savoir plus",
+    "items": {
+      "representation": {
+        "title": "Représentation",
+        "desc": "Représentation du secteur auprès des pouvoirs publics et des donneurs d'ordre.",
+        "fullDesc": "La FPBA-CI porte la voix des producteurs auprès du Ministère, de la CIE, des collectivités et des bailleurs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "features": [
+          "Plaidoyer auprès des ministères et institutions",
+          "Suivi des appels d'offres publics",
+          "Interface avec la CIE et les opérateurs télécoms",
+          "Participation aux instances de normalisation",
+          "Représentation à l'international",
+          "Communication institutionnelle"
+        ],
+        "why": "Une voix unique et structurée porte beaucoup plus loin que des initiatives isolées."
+      },
+      "accompaniment": {
+        "title": "Accompagnement",
+        "desc": "Accompagnement technique, juridique et financier des entreprises adhérentes.",
+        "fullDesc": "Nos experts épaulent nos membres dans la structuration de leur outil de production, l'accès au financement et la mise en conformité. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "features": [
+          "Diagnostic industriel d'usine",
+          "Mise en conformité normative",
+          "Appui au montage de dossiers de financement",
+          "Conseil juridique et fiscal sectoriel",
+          "Audit qualité et sécurité",
+          "Plan de progrès individualisé"
+        ],
+        "why": "Un accompagnement structuré sécurise la croissance et professionnalise les pratiques."
+      },
+      "training": {
+        "title": "Formation",
+        "desc": "Programmes de formation continue pour les ouvriers, techniciens et dirigeants.",
+        "fullDesc": "Nous concevons et déployons des modules de formation adaptés aux métiers du poteau béton : ferraillage, vibration, démoulage, contrôle qualité, sécurité.",
+        "features": [
+          "Formation au ferraillage et au coulage",
+          "Maîtrise des bétons et formulations",
+          "Contrôle qualité et essais en laboratoire",
+          "Hygiène, sécurité et environnement (HSE)",
+          "Management d'équipe atelier",
+          "Modules dirigeants : stratégie & finance"
+        ],
+        "why": "La montée en compétence des équipes est le premier levier de qualité produit."
+      },
+      "standardization": {
+        "title": "Normalisation",
+        "desc": "Définition, mise à jour et promotion des normes techniques de la filière.",
+        "fullDesc": "Nous animons les commissions techniques qui élaborent et révisent les normes ivoiriennes du poteau béton armé en lien avec CODINORM et les utilisateurs finaux.",
+        "features": [
+          "Commissions techniques permanentes",
+          "Révision des spécifications CIE / télécoms",
+          "Référentiels d'essais et de contrôle",
+          "Veille normative régionale (CEDEAO)",
+          "Guide des bonnes pratiques",
+          "Labellisation 'Produit FPBA-CI'"
+        ],
+        "why": "Une norme partagée garantit la qualité, protège les consommateurs et structure le marché."
+      },
+      "information": {
+        "title": "Information & Veille",
+        "desc": "Veille sectorielle, marché, réglementation et appels d'offres.",
+        "fullDesc": "Nos adhérents reçoivent une lettre régulière, l'accès à une plateforme documentaire et des alertes appels d'offres en temps réel.",
+        "features": [
+          "Newsletter mensuelle FPBA-CI",
+          "Alertes appels d'offres",
+          "Bibliothèque de normes et études",
+          "Statistiques de marché",
+          "Annuaire des adhérents",
+          "Espace privé sécurisé"
+        ],
+        "why": "L'information utile, au bon moment, fait la différence sur les marchés concurrentiels."
+      },
+      "networking": {
+        "title": "Mise en réseau",
+        "desc": "Événements, rencontres B2B et missions économiques pour développer votre activité.",
+        "fullDesc": "Salons, journées techniques, rencontres avec donneurs d'ordre et missions à l'international : autant d'occasions de développer son carnet d'adresses.",
+        "features": [
+          "Assemblée Générale annuelle",
+          "Journées techniques thématiques",
+          "Rencontres B2B avec donneurs d'ordre",
+          "Missions économiques régionales",
+          "Salon du BTP et de l'énergie",
+          "Plateforme de mise en relation"
+        ],
+        "why": "Un réseau structuré accélère les opportunités d'affaires et le partage de bonnes pratiques."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Témoignages",
+    "title": "Ce que disent nos",
+    "titleHighlight": "adhérents",
+    "subtitle": "Nos membres témoignent de leur expérience au sein de la fédération.",
+    "items": [
+      {
+        "name": "Kofi Mensah",
+        "role": "Directeur, Société Poteaux du Nord",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. L'accompagnement de la FPBA-CI nous a permis d'obtenir l'homologation CIE en un temps record.",
+        "rating": 5
+      },
+      {
+        "name": "Aminata Diallo",
+        "role": "Gérante, Béton Industries SARL",
+        "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse. Grâce aux formations FPBA-CI, notre taux de rebut a chuté de moitié en un an.",
+        "rating": 5
+      },
+      {
+        "name": "Jean-Baptiste Koffi",
+        "role": "PDG, Poteaux & Préfa CI",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. La fédération nous donne une vraie voix face aux pouvoirs publics et aux donneurs d'ordre.",
+        "rating": 5
+      },
+      {
+        "name": "Fatou Traoré",
+        "role": "Responsable QHSE, IvoirBéton",
+        "text": "Excepteur sint occaecat cupidatat non proident. Les commissions techniques sont un espace précieux d'échange entre professionnels du secteur.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Échangeons sur votre",
+    "titleHighlight": "projet",
+    "subtitle": "Remplissez le formulaire et le secrétariat de la FPBA-CI vous recontactera dans les meilleurs délais.",
+    "form": {
+      "name": "Nom complet",
+      "name_placeholder": "Votre nom et prénom",
+      "company": "Entreprise",
+      "company_placeholder": "Nom de votre société",
+      "email": "Adresse email",
+      "email_placeholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "subject": "Objet",
+      "subject_placeholder": "Sélectionnez un objet",
+      "message": "Votre message",
+      "message_placeholder": "Décrivez votre besoin...",
+      "submit": "Envoyer la demande",
+      "submitting": "Envoi en cours...",
+      "success": "Demande enregistrée avec succès. Nous vous recontacterons très bientôt.",
+      "subjects": [
+        "Demande d'information",
+        "Demande d'adhésion",
+        "Demande d'accompagnement",
+        "Demande de devis produits",
+        "Partenariat",
+        "Presse / Média",
+        "Autre"
+      ]
+    },
+    "info": {
+      "address_label": "Adresse",
+      "address": "Cocody Angré, Abidjan, Côte d'Ivoire",
+      "email_label": "Email",
+      "phone_label": "Téléphone",
+      "hours_label": "Horaires",
+      "hours": "Lun – Ven : 08h00 – 17h30"
+    }
+  },
+  "membership": {
+    "label": "Adhésion",
+    "title": "Rejoignez la",
+    "titleHighlight": "FPBA-CI",
+    "subtitle": "Toute entreprise de production de poteaux en béton armé établie en Côte d'Ivoire peut adhérer à la fédération. Renseignez le formulaire ci-dessous.",
+    "benefits_title": "Pourquoi adhérer ?",
+    "benefits": [
+      "Voix collective auprès des pouvoirs publics et donneurs d'ordre",
+      "Accès prioritaire aux appels d'offres et marchés publics",
+      "Formations et ateliers techniques à tarif privilégié",
+      "Veille réglementaire, normative et sectorielle",
+      "Accompagnement individuel pour la mise en conformité",
+      "Mise en réseau et opportunités B2B"
+    ],
+    "form": {
+      "company": "Raison sociale",
+      "company_placeholder": "Nom de votre entreprise",
+      "rccm": "N° RCCM",
+      "rccm_placeholder": "CI-ABJ-...",
+      "manager": "Nom du dirigeant",
+      "manager_placeholder": "Nom et prénom",
+      "role": "Fonction",
+      "role_placeholder": "Ex : Directeur Général",
+      "email": "Email professionnel",
+      "email_placeholder": "contact@entreprise.ci",
+      "phone": "Téléphone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "address": "Adresse / Siège",
+      "address_placeholder": "Ville, quartier, rue",
+      "products": "Principaux produits fabriqués",
+      "products_placeholder": "Ex : poteaux électriques, télécoms, éclairage…",
+      "staff": "Effectif",
+      "staff_placeholder": "Sélectionnez une tranche",
+      "staff_options": ["1 – 9 salariés", "10 – 49 salariés", "50 – 199 salariés", "200 salariés et +"],
+      "motivation": "Motivation à rejoindre la FPBA-CI",
+      "motivation_placeholder": "Présentez votre entreprise et vos attentes…",
+      "consent": "Je certifie l'exactitude des informations renseignées et accepte les statuts de la fédération.",
+      "submit": "Soumettre ma demande d'adhésion",
+      "success": "Votre demande d'adhésion a bien été enregistrée. Notre secrétariat vous recontactera."
+    }
+  },
+  "accompaniment": {
+    "label": "Accompagnement",
+    "title": "Demander un",
+    "titleHighlight": "accompagnement",
+    "subtitle": "Que vous soyez adhérent ou non, vous pouvez solliciter l'expertise de la FPBA-CI pour structurer votre activité.",
+    "form": {
+      "type": "Type d'accompagnement",
+      "type_placeholder": "Sélectionnez un type",
+      "types": [
+        "Diagnostic industriel",
+        "Mise en conformité normative",
+        "Accès au financement",
+        "Conseil juridique / fiscal",
+        "Audit qualité & sécurité",
+        "Formation sur mesure",
+        "Autre"
+      ],
+      "company": "Entreprise",
+      "company_placeholder": "Nom de votre société",
+      "contact": "Personne à contacter",
+      "contact_placeholder": "Nom et prénom",
+      "email": "Email",
+      "email_placeholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phone_placeholder": "+225 XX XX XX XX XX",
+      "need": "Description de votre besoin",
+      "need_placeholder": "Décrivez précisément votre demande…",
+      "deadline": "Échéance souhaitée",
+      "deadline_placeholder": "Ex : sous 3 mois",
+      "submit": "Soumettre ma demande",
+      "success": "Votre demande d'accompagnement a bien été reçue. Nous vous répondrons rapidement."
+    }
+  },
+  "admin": {
+    "title": "Espace Gestionnaire",
+    "subtitle": "Connectez-vous pour gérer les demandes et le contenu du site.",
+    "login": {
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "hint": "Démo : admin@fpba-ci.org / admin"
+    },
+    "tabs": {
+      "membership": "Adhésions",
+      "accompaniment": "Accompagnements",
+      "contact": "Demandes Contact",
+      "content": "Contenu"
+    },
+    "empty": "Aucune demande pour le moment.",
+    "logout": "Déconnexion",
+    "delete": "Supprimer",
+    "status": {
+      "new": "Nouveau",
+      "in_review": "En cours",
+      "done": "Traité"
+    }
+  },
+  "footer": {
+    "tagline": "Fédération des Producteurs de Poteaux Béton Armé de Côte d'Ivoire",
+    "description": "La FPBA-CI fédère les industriels du poteau en béton armé en Côte d'Ivoire pour structurer la filière et défendre ses intérêts.",
+    "links_title": "Liens rapides",
+    "products_title": "Produits",
+    "contact_title": "Contact",
+    "copyright": "© 2026 FPBA-CI. Tous droits réservés.",
+    "made_with": "Côte d'Ivoire"
+  }
+}

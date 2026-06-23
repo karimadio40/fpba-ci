@@ -1,0 +1,4 @@
+/* App global resets — handled by global.css */
+#root {
+  min-height: 100vh;
+}
