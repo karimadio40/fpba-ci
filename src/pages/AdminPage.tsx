@@ -36,10 +36,10 @@ const formatDate = (ts: number) => {
   return d.toLocaleString();
 };
 
-const SubmissionsView: React.FC<{ kind: SubmissionKind }> = ({ kind }) => {
+const SubmissionsView: React.FC<{ kind: SubmissionKind; tick: number }> = ({ kind, tick }) => {
   const { t } = useTranslation();
   const [version, setVersion] = useState(0);
-  const items = useMemo(() => listSubmissions(kind), [kind, version]);
+  const items = useMemo(() => listSubmissions(kind), [kind, version, tick]);
   const [openId, setOpenId] = useState<string | null>(null);
 
   const onStatusChange = (id: string, status: SubmissionStatus) => {
@@ -76,13 +76,13 @@ const SubmissionsView: React.FC<{ kind: SubmissionKind }> = ({ kind }) => {
           const isOpen = openId === row.id;
           return (
             <React.Fragment key={row.id}>
-              <tr>
+              <tr className={isOpen ? 'active-row' : ''}>
                 <td>{formatDate(row.createdAt)}</td>
                 <td>
-                  <strong style={{ color: 'var(--color-text-primary)' }}>{identity}</strong>
+                  <strong className="admin-identity">{identity}</strong>
                   {p.email && (
-                    <div style={{ fontSize: '0.78rem' }}>
-                      <a href={`mailto:${p.email}`} style={{ color: 'var(--color-primary)' }}>
+                    <div style={{ fontSize: '0.78rem', marginTop: '2px' }}>
+                      <a href={`mailto:${p.email}`} className="admin-email-link">
                         {p.email}
                       </a>
                     </div>
@@ -90,7 +90,7 @@ const SubmissionsView: React.FC<{ kind: SubmissionKind }> = ({ kind }) => {
                 </td>
                 <td>
                   <select
-                    className="admin-status-select"
+                    className={`admin-status-select status-${row.status}`}
                     value={row.status}
                     onChange={(e) => onStatusChange(row.id, e.target.value as SubmissionStatus)}
                   >
@@ -102,31 +102,41 @@ const SubmissionsView: React.FC<{ kind: SubmissionKind }> = ({ kind }) => {
                 <td>
                   <div className="admin-row__actions">
                     <button
-                      className="admin-row__delete"
+                      className={`admin-row__btn-details ${isOpen ? 'active' : ''}`}
                       onClick={() => setOpenId(isOpen ? null : row.id)}
                     >
                       {isOpen ? 'Fermer' : 'Détails'}
                     </button>
-                    <button className="admin-row__delete" onClick={() => onDelete(row.id)}>
+                    <button className="admin-row__btn-delete" onClick={() => onDelete(row.id)}>
                       {t('admin.delete')}
                     </button>
                   </div>
                 </td>
               </tr>
-              {isOpen && (
-                <tr>
-                  <td colSpan={4} style={{ padding: 0 }}>
-                    <div className="admin-table__details">
-                      {Object.entries(p).map(([k, v]) => (
-                        <div key={k}>
-                          <strong>{k}</strong>
-                          <span style={{ wordBreak: 'break-word' }}>{String(v) || '—'}</span>
+              <tr style={{ border: 'none' }}>
+                <td colSpan={4} style={{ padding: 0, border: 'none' }}>
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: 'easeInOut' }}
+                        style={{ overflow: 'hidden' }}
+                      >
+                        <div className="admin-table__details">
+                          {Object.entries(p).map(([k, v]) => (
+                            <div key={k} className="admin-table__detail-row">
+                              <span className="admin-table__detail-key">{k}</span>
+                              <span className="admin-table__detail-val">{String(v) || '—'}</span>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  </td>
-                </tr>
-              )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </td>
+              </tr>
             </React.Fragment>
           );
         })}
@@ -351,7 +361,7 @@ const AdminPage: React.FC = () => {
                 ))}
               </div>
 
-              <SubmissionsView kind={view.kind} key={`${view.kind}_${statsTick}`} />
+              <SubmissionsView kind={view.kind} tick={statsTick} key={view.kind} />
             </>
           ) : (
             <>
@@ -372,27 +382,33 @@ const AdminPage: React.FC = () => {
               </div>
 
               <div className="admin__form">
-                {currentSection!.fields.map((f) => (
-                  <div key={f.key} className="admin__field">
-                    <label>
-                      {f.label}
-                      <span className="admin__field-key">{f.key}</span>
-                    </label>
-                    {f.type === 'textarea' ? (
-                      <textarea
-                        value={draft[f.key] ?? ''}
-                        onChange={(e) => setDraft({ ...draft, [f.key]: e.target.value })}
-                        rows={4}
-                      />
-                    ) : (
-                      <input
-                        type="text"
-                        value={draft[f.key] ?? ''}
-                        onChange={(e) => setDraft({ ...draft, [f.key]: e.target.value })}
-                      />
-                    )}
-                  </div>
-                ))}
+                {currentSection!.fields.map((f) => {
+                  const isTextarea = f.type === 'textarea';
+                  return (
+                    <div
+                      key={f.key}
+                      className={`admin__field ${isTextarea ? 'admin__field--full' : 'admin__field--half'}`}
+                    >
+                      <label>
+                        <span className="admin__field-label-text">{f.label}</span>
+                        <span className="admin__field-key">{f.key}</span>
+                      </label>
+                      {isTextarea ? (
+                        <textarea
+                          value={draft[f.key] ?? ''}
+                          onChange={(e) => setDraft({ ...draft, [f.key]: e.target.value })}
+                          rows={4}
+                        />
+                      ) : (
+                        <input
+                          type="text"
+                          value={draft[f.key] ?? ''}
+                          onChange={(e) => setDraft({ ...draft, [f.key]: e.target.value })}
+                        />
+                      )}
+                    </div>
+                  );
+                })}
               </div>
 
               <div className="admin__savebar">

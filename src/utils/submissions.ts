@@ -18,7 +18,61 @@ const readAll = (): Submission[] => {
   if (!isBrowser) return [];
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
+    if (raw === null) {
+      // Seed default submissions for demonstration
+      const initial: Submission[] = [
+        {
+          id: 'membership_seed_1',
+          kind: 'membership',
+          createdAt: Date.now() - 24 * 3600 * 1000 * 2, // 2 days ago
+          status: 'new',
+          payload: {
+            company: 'SIBM (Société Ivoirienne de Béton Manufacturé)',
+            rccm: 'CI-ABJ-1994-B-172940',
+            manager: 'Goué Noel',
+            role: 'Directeur Général',
+            email: 'n.goue@sibmci.com',
+            phone: '+2250504019299',
+            address: 'Cocody Angré, Abidjan',
+            products: 'Poteaux électriques, Poteaux d\'éclairage public',
+            staff: '200 salariés et +',
+            motivation: 'En tant qu\'acteur majeur de la production de poteaux en Côte d\'Ivoire, nous souhaitons activement contribuer à la normalisation de la filière et collaborer avec l\'ensemble des producteurs pour assainir le marché.',
+            consent: 'true'
+          }
+        },
+        {
+          id: 'accompaniment_seed_1',
+          kind: 'accompaniment',
+          createdAt: Date.now() - 3600 * 1000 * 5, // 5 hours ago
+          status: 'in_review',
+          payload: {
+            type: 'Mise en conformité normative',
+            company: 'Béton Force Côte d\'Ivoire',
+            contact: 'Koffi Kouamé Jean',
+            email: 'jk.kouame@betonforce.ci',
+            phone: '+2250708091011',
+            need: 'Nous avons besoin d\'un accompagnement pour préparer l\'audit de conformité technique de notre nouvelle ligne de production de poteaux électriques 12m selon le cahier des charges de la CIE.',
+            deadline: 'Sous 2 mois'
+          }
+        },
+        {
+          id: 'contact_seed_1',
+          kind: 'contact',
+          createdAt: Date.now() - 3600 * 1000 * 1, // 1 hour ago
+          status: 'new',
+          payload: {
+            name: 'Kassoum Traoré',
+            company: 'CODINORM',
+            email: 'k.traore@codinorm.ci',
+            phone: '+2250102030405',
+            subject: 'Partenariat',
+            message: 'Bonjour, nous souhaiterions organiser une séance de travail conjointe avec la FPBA-CI concernant la révision de la norme NI-CIE relative aux supports de réseaux aériens. Merci de nous proposer des dates de réunion.'
+          }
+        }
+      ];
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+      return initial;
+    }
     return JSON.parse(raw) as Submission[];
   } catch {
     return [];
