@@ -5,7 +5,22 @@ import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import ContactSection from '../components/Contact/ContactSection';
+import representationImg from '../assets/service_representation.png';
+import accompanimentImg from '../assets/service_accompaniment.png';
+import trainingImg from '../assets/service_training.png';
+import standardizationImg from '../assets/service_standardization.png';
+import informationImg from '../assets/service_information.png';
+import networkingImg from '../assets/service_networking.png';
 import './ServiceDetailPage.css';
+
+const serviceImages: Record<string, string> = {
+  representation: representationImg,
+  accompaniment: accompanimentImg,
+  training: trainingImg,
+  standardization: standardizationImg,
+  information: informationImg,
+  networking: networkingImg,
+};
 
 const serviceOrder = [
   'representation',
@@ -23,6 +38,8 @@ const ServiceDetailPage: React.FC = () => {
   if (!key || !serviceOrder.includes(key)) {
     return <Navigate to="/" replace />;
   }
+
+  const image = serviceImages[key];
   const title = t(`services.items.${key}.title`);
   const fullDesc = t(`services.items.${key}.fullDesc`);
   const why = t(`services.items.${key}.why`);
@@ -38,7 +55,7 @@ const ServiceDetailPage: React.FC = () => {
       <main className="sdp">
         {/* Hero banner */}
         <div className="sdp__hero">
-          <div className="sdp__hero-img sdp__hero-img--gradient" />
+          <div className="sdp__hero-img" style={{ backgroundImage: `url(${image})` }} />
           <div className="sdp__hero-overlay" />
           <div className="container sdp__hero-content">
             <motion.div

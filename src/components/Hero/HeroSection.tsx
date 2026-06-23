@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion'; import type { Easing } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import HeroCanvas from './HeroCanvas';
 import './HeroSection.css';
 
 const EASE: Easing = 'easeOut';
@@ -26,8 +25,6 @@ const HeroSection: React.FC = () => {
       <div className="hero__photo-bg" />
       <div className="hero__photo-overlay" />
 
-      {/* 3D Canvas background (particles on top) */}
-      <HeroCanvas />
 
       {/* Gradient overlays */}
       <div className="hero__overlay hero__overlay--left" />

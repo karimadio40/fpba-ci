@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import type { Easing } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import representationImg from '../../assets/service_representation.png';
+import accompanimentImg from '../../assets/service_accompaniment.png';
+import trainingImg from '../../assets/service_training.png';
+import standardizationImg from '../../assets/service_standardization.png';
+import informationImg from '../../assets/service_information.png';
+import networkingImg from '../../assets/service_networking.png';
 import './Services.css';
 
 const EASE: Easing = 'easeOut';
@@ -10,6 +16,7 @@ const EASE: Easing = 'easeOut';
 const serviceData = [
   {
     key: 'representation',
+    image: representationImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 21h18M5 21V11l7-5 7 5v10" />
@@ -19,6 +26,7 @@ const serviceData = [
   },
   {
     key: 'accompaniment',
+    image: accompanimentImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="9" cy="9" r="3" />
@@ -30,6 +38,7 @@ const serviceData = [
   },
   {
     key: 'training',
+    image: trainingImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
@@ -39,6 +48,7 @@ const serviceData = [
   },
   {
     key: 'standardization',
+    image: standardizationImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="3" width="16" height="18" rx="2" />
@@ -50,6 +60,7 @@ const serviceData = [
   },
   {
     key: 'information',
+    image: informationImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -60,6 +71,7 @@ const serviceData = [
   },
   {
     key: 'networking',
+    image: networkingImg,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="5" r="2.5" />
@@ -109,7 +121,7 @@ const ServicesSection: React.FC = () => {
         </motion.div>
 
         <div className="services__grid">
-          {serviceData.map(({ key, icon }, i) => (
+          {serviceData.map(({ key, image, icon }, i) => (
             <motion.div
               key={key}
               className="services__card"
@@ -120,8 +132,14 @@ const ServicesSection: React.FC = () => {
               custom={0.1 + i * 0.07}
               whileHover={{ y: -8 }}
             >
-              <div className="services__card-img-wrap services__card-img-wrap--icon">
-                <div className="services__card-icon-big">{icon}</div>
+              <div className="services__card-img-wrap">
+                <img
+                  src={image}
+                  alt={t(`services.items.${key}.title`)}
+                  className="services__card-img"
+                  loading="lazy"
+                />
+                <div className="services__card-img-overlay" />
                 <span className="services__card-number">0{i + 1}</span>
               </div>
 
