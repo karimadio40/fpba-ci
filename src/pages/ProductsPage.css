@@ -51,7 +51,7 @@
 
 .product-card__visual {
   width: 100%;
-  height: 120px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +60,17 @@
   border-radius: var(--border-radius);
   position: relative;
   overflow: hidden;
+}
+
+.product-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card__img {
+  transform: scale(1.08);
 }
 
 .product-card__visual svg {

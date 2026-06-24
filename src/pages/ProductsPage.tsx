@@ -6,68 +6,37 @@ import { useNavigate } from 'react-router-dom';
 import Layout from '../components/Layout/Layout';
 import './ProductsPage.css';
 
+import imgElectric from '../assets/Poteaux électriques.jpg';
+import imgTelecom from '../assets/Poteaux télécoms.jpg';
+import imgLighting from '../assets/Poteaux éclairage public.webp';
+import imgFence from '../assets/Poteaux clôture.jpg';
+import imgCustom from '../assets/Poteaux sur mesure.webp';
+
 const PRODUCT_KEYS = ['electric', 'telecom', 'lighting', 'fence', 'custom', 'accessories'] as const;
 type ProductKey = (typeof PRODUCT_KEYS)[number];
 
-const PoleIcon: React.FC<{ variant: ProductKey }> = ({ variant }) => {
-  switch (variant) {
-    case 'electric':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-          <line x1="32" y1="6" x2="32" y2="58" stroke="#F26A1F" />
-          <line x1="14" y1="14" x2="50" y2="14" stroke="#F26A1F" />
-          <line x1="18" y1="24" x2="46" y2="24" stroke="#F26A1F" opacity="0.85" />
-          <circle cx="15" cy="14" r="2" fill="#F26A1F" />
-          <circle cx="32" cy="14" r="2" fill="#F26A1F" />
-          <circle cx="49" cy="14" r="2" fill="#F26A1F" />
-        </svg>
-      );
-    case 'telecom':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
-          <line x1="32" y1="6" x2="32" y2="58" />
-          <path d="M22 14 L32 8 L42 14" />
-          <path d="M18 22 L32 12 L46 22" opacity="0.7" />
-          <circle cx="32" cy="20" r="2.5" fill="#F26A1F" />
-        </svg>
-      );
-    case 'lighting':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
-          <line x1="22" y1="6" x2="22" y2="58" />
-          <path d="M22 10 Q34 10 38 18" />
-          <rect x="34" y="16" width="10" height="6" rx="1.5" fill="#F26A1F" />
-          <path d="M39 22 L34 30 L44 30 Z" fill="#F26A1F" opacity="0.4" />
-        </svg>
-      );
-    case 'fence':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
-          <line x1="10" y1="20" x2="10" y2="58" />
-          <line x1="22" y1="20" x2="22" y2="58" />
-          <line x1="34" y1="20" x2="34" y2="58" />
-          <line x1="46" y1="20" x2="46" y2="58" />
-          <line x1="6" y1="30" x2="50" y2="30" opacity="0.7" />
-          <line x1="6" y1="44" x2="50" y2="44" opacity="0.7" />
-        </svg>
-      );
-    case 'custom':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
-          <line x1="32" y1="6" x2="32" y2="58" />
-          <circle cx="32" cy="22" r="10" />
-          <path d="M28 22 L31 25 L36 18" />
-        </svg>
-      );
-    case 'accessories':
-      return (
-        <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
-          <rect x="14" y="20" width="36" height="8" rx="2" />
-          <rect x="20" y="36" width="24" height="20" rx="2" />
-          <line x1="32" y1="20" x2="32" y2="6" />
-        </svg>
-      );
+const PRODUCT_IMAGES: Partial<Record<ProductKey, string>> = {
+  electric: imgElectric,
+  telecom: imgTelecom,
+  lighting: imgLighting,
+  fence: imgFence,
+  custom: imgCustom,
+};
+
+const ProductVisual: React.FC<{ variant: ProductKey }> = ({ variant }) => {
+  const imageSrc = PRODUCT_IMAGES[variant];
+  if (imageSrc) {
+    return <img src={imageSrc} alt={`Produit ${variant}`} className="product-card__img" />;
   }
+
+  // Fallback for accessories since no image was provided
+  return (
+    <svg viewBox="0 0 64 64" fill="none" stroke="#F26A1F" strokeWidth="2.5" strokeLinecap="round">
+      <rect x="14" y="20" width="36" height="8" rx="2" />
+      <rect x="20" y="36" width="24" height="20" rx="2" />
+      <line x1="32" y1="20" x2="32" y2="6" />
+    </svg>
+  );
 };
 
 const EASE: Easing = 'easeOut';
@@ -122,7 +91,7 @@ const ProductsPage: React.FC = () => {
                   whileHover={{ y: -6 }}
                 >
                   <div className="product-card__visual">
-                    <PoleIcon variant={key} />
+                    <ProductVisual variant={key} />
                     <span className="product-card__number">0{i + 1}</span>
                   </div>
                   <h3 className="product-card__title">{t(`products.items.${key}.title`)}</h3>
