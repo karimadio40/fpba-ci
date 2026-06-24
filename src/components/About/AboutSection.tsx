@@ -1,8 +1,9 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import type { Easing } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './About.css';
+import aboutImg from '../../assets/img11.jpg';
 
 const EASE: Easing = 'easeOut';
 
@@ -88,27 +89,8 @@ const AboutSection: React.FC = () => {
             custom={0.15}
           >
             {/* Image placeholder */}
-            <div className="about__image-placeholder">
-              <div className="about__image-inner">
-                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="about__pole-illu">
-                  <defs>
-                    <linearGradient id="poleGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#F26A1F" />
-                      <stop offset="100%" stopColor="#C9521A" />
-                    </linearGradient>
-                  </defs>
-                  <ellipse cx="100" cy="180" rx="70" ry="6" fill="#F26A1F" opacity="0.2" />
-                  <rect x="94" y="20" width="12" height="160" rx="2" fill="url(#poleGrad)" />
-                  <rect x="60" y="46" width="80" height="6" rx="1.5" fill="#F26A1F" />
-                  <rect x="68" y="74" width="64" height="6" rx="1.5" fill="#F26A1F" opacity="0.85" />
-                  <circle cx="64" cy="49" r="4" fill="#fff" stroke="#F26A1F" strokeWidth="1.5" />
-                  <circle cx="100" cy="49" r="4" fill="#fff" stroke="#F26A1F" strokeWidth="1.5" />
-                  <circle cx="136" cy="49" r="4" fill="#fff" stroke="#F26A1F" strokeWidth="1.5" />
-                  <path d="M64 49 Q100 70 136 49" stroke="#F26A1F" strokeWidth="1.2" opacity="0.6" fill="none" />
-                  <path d="M72 77 Q100 90 128 77" stroke="#F26A1F" strokeWidth="1.2" opacity="0.5" fill="none" />
-                </svg>
-                <p className="about__image-label">Photo à ajouter — emplacement réservé</p>
-              </div>
+            <div className="about__image-wrapper">
+              <img src={aboutImg} alt="About us" className="about__image" />
               {/* Badge */}
               <div className="about__badge">
                 <span className="about__badge-num">10+</span>

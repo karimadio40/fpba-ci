@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'; import type { Easing } from 'framer-moti
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import './HeroSection.css';
+import bgImage from '../../assets/img6.jpg';
 
 const EASE: Easing = 'easeOut';
 
@@ -22,7 +23,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="hero" id="home">
       {/* Photo background */}
-      <div className="hero__photo-bg" />
+      <div className="hero__photo-bg" style={{ backgroundImage: `url(${bgImage})` }} />
       <div className="hero__photo-overlay" />
 
 
@@ -42,10 +43,10 @@ const HeroSection: React.FC = () => {
           animate="visible"
         >
           {/* Badge */}
-          <motion.div className="hero__badge" custom={0.1} variants={fadeUp}>
+          {/* <motion.div className="hero__badge" custom={0.1} variants={fadeUp}>
             <span className="hero__badge-dot" />
             {t('hero.badge')}
-          </motion.div>
+          </motion.div> */}
 
           {/* Title */}
           <motion.h1 className="hero__title" custom={0.25} variants={fadeUp}>
@@ -68,7 +69,7 @@ const HeroSection: React.FC = () => {
             >
               {t('hero.cta_primary')}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </button>
             <button

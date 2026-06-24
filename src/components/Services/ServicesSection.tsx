@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import type { Easing } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import representationImg from '../../assets/service_representation.png';
-import accompanimentImg from '../../assets/service_accompaniment.png';
-import trainingImg from '../../assets/service_training.png';
-import standardizationImg from '../../assets/service_standardization.png';
-import informationImg from '../../assets/service_information.png';
-import networkingImg from '../../assets/service_networking.png';
+import representationImg from '../../assets/image1.webp';
+import accompanimentImg from '../../assets/image2.avif';
+import trainingImg from '../../assets/img4.jpg';
+import standardizationImg from '../../assets/img5.webp';
+import informationImg from '../../assets/img7.jpg';
+import networkingImg from '../../assets/img3.jpg';
 import './Services.css';
 
 const EASE: Easing = 'easeOut';
@@ -157,7 +157,7 @@ const ServicesSection: React.FC = () => {
                 <Link to={`/services/${key}`} className="services__card-link">
                   <span>{t('services.learnMore')}</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </Link>
               </div>
