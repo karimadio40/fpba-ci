@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
               </svg>
             </button>
             <button
-              className="btn btn-outline"
+              className="btn btn-outline hero__btn-outline"
               onClick={() => navigate('/membership')}
             >
               {t('hero.cta_secondary')}

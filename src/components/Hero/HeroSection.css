@@ -117,7 +117,7 @@
 /* Subtitle */
 .hero__subtitle {
   font-size: clamp(1rem, 1.8vw, 1.2rem);
-  color: var(--color-white-70);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.75;
   margin-bottom: 40px;
   max-width: 560px;
@@ -135,6 +135,17 @@
   font-size: 1rem;
   padding: 14px 32px;
   box-shadow: 0 0 30px rgba(242, 106, 31, 0.45);
+}
+
+.hero__btn-outline {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero__btn-outline:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Stats */
@@ -187,7 +198,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  color: var(--color-white-40);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;

@@ -37,6 +37,9 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLang, setActiveLang] = useState(i18n.language);
 
+  const isHomePage = location.pathname === '/';
+  const isTransparentOnDark = isHomePage && !scrolled;
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener('scroll', handleScroll);
@@ -71,7 +74,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} navbar--${theme}`}>
+    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${isTransparentOnDark ? 'navbar--transparent-dark' : ''} navbar--${theme}`}>
       <div className="container navbar__inner">
 
         <Logo onClick={goHome} />

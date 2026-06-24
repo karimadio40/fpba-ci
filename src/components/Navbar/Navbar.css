@@ -1,4 +1,4 @@
-﻿/* ---- Navbar ---- */
+/* ---- Navbar ---- */
 .navbar {
   position: fixed;
   top: 0;
@@ -260,4 +260,36 @@
 }
 @media (max-width: 768px) {
   .navbar__admin-link { display: none; }
+}
+
+/* ---- Transparent over Dark Background (Home Page) ---- */
+.navbar--transparent-dark .navbar__link,
+.navbar--transparent-dark .navbar__theme-toggle,
+.navbar--transparent-dark .navbar__admin-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar--transparent-dark .navbar__theme-toggle,
+.navbar--transparent-dark .navbar__admin-link,
+.navbar--transparent-dark .navbar__lang-toggle {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.navbar--transparent-dark .navbar__lang-toggle {
+  color: rgba(255, 255, 255, 0.6);
+}
+.navbar--transparent-dark .navbar__lang-toggle span.active {
+  color: #fff;
+}
+
+.navbar--transparent-dark .navbar__hamburger span {
+  background: #ffffff;
+}
+
+.navbar--transparent-dark .logo__name {
+  color: #ffffff !important;
+}
+.navbar--transparent-dark .logo__sub {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
